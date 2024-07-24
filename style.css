@@ -325,6 +325,9 @@ button#toggle-dark-mode{
     bottom: 0;
     right: 0;
     margin: 1.2rem;
+}
+
+.dark-mode button#toggle-dark-mode{
     background-color: rgb(63, 118, 255);
     content: 🌼;
 }
