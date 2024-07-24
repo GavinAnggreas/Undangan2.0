@@ -19,14 +19,7 @@ main{
 .hero, .home, .info{
     transition: background-color 1s ease, color 1s ease;
 }
-@keyframes smoooth {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
+
 .hero::before{
     content: '';
     position: absolute;
@@ -59,17 +52,6 @@ main{
     color: rgb(140, 182, 255);
     background-color: white;
 }
-@keyframes Move {
-    0%, 100% {
-      left: 0;
-      right:0;
-    }
-    50% {
-      left: 5px;
-      right: 5px;
-    }
-  }
-
 .hero a:hover{
     background-color: rgba(140, 192, 255, 0.754);
     color: white;
@@ -384,5 +366,24 @@ button#toggle-dark-mode{
     }
     .home{
         margin-top: -3.35rem;
+    }
+}
+
+@keyframes Move {
+    0%, 100% {
+      left: 0;
+      right:0;
+    }
+    50% {
+      left: 5px;
+      right: 5px;
+    }
+  }
+@keyframes smoooth {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
     }
 }
